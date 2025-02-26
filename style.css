@@ -9,7 +9,13 @@ body {
     color: white;
     text-align: center;
     margin: 0;
+
+    /* Gradient background animation */
+   background: linear-gradient(-45deg, #667eea, #764ba2, #ffcc00, #ff5733);
+   background-size: 300% 300%;
+   animation: gradientAnimation 8s ease infinite;
 }
+
 
 /*container styling for better readability*/
 .container {
@@ -47,3 +53,11 @@ button {
 button:hover {
     background: #ffdd44;
 }
+
+/* Animated gradient background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+

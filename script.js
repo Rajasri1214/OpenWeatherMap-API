@@ -20,7 +20,10 @@ function fetchWeather() {
                 return;
             }
             /* Update the UI with feteched weather details */
-            document.getElementById("data").textContent = `Temperature: ${data.main.temp}°C, Humidity: ${data.main.humidity}%, Weather: ${data.weather[0].description}`;
+            document.getElementById("data").innerHTML = `
+            <p><strong>Temperature:</strong> ${data.main.temp}°C</p>
+            <p><strong>Humidity:</strong> ${data.main.humidity}% </p>
+            <p><strong>Weather:</strong> ${data.weather[0].description}</p>`;
         })
         .catch(error => { /* Handle any errors in fetching the data */
             document.getElementById("data").textContent = "Failed to fetch weather data."; 
