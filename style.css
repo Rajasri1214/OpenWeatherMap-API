@@ -1,3 +1,4 @@
+/* Styling entire page*/
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,6 +10,8 @@ body {
     text-align: center;
     margin: 0;
 }
+
+/*container styling for better readability*/
 .container {
     background: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -16,9 +19,12 @@ body {
     width: 90%;
     max-width: 500px;
 }
+
 .content-box {
     margin: 20px 0;
 }
+
+/*Styling the input field*/
 input {
     padding: 10px;
     border: none;
@@ -26,6 +32,8 @@ input {
     margin-bottom: 10px;
     width: 80%;
 }
+
+/*Button styling*/
 button {
     background: #ffcc00;
     border: none;
@@ -34,6 +42,8 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* Button hover effect*/
 button:hover {
     background: #ffdd44;
 }
